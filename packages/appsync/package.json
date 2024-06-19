@@ -1,0 +1,34 @@
+{
+  "name": "@functorfactory/appsync-client",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "description": "",
+  "homepage": "",
+  "keywords": [
+    "aws",
+    "appsync"
+  ],
+  "tags": [
+    "aws",
+    "appsync"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FunctorFactory/aws-utils.git",
+    "directory": "packages/appsync"
+  },
+  "bugs": {
+    "url": "https://github.com/FunctorFactory/aws-utils/issues"
+  },
+  "scripts": {
+    "build": "pnpm build-esm && pnpm build-cjs && pnpm build-annotate",
+    "build-esm": "tsc -b tsconfig.build.json",
+    "build-cjs": "babel build/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir build/cjs --source-maps",
+    "build-annotate": "babel build --plugins annotate-pure-calls --out-dir build --source-maps",
+    "check": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@aws-sdk/client-appsync": "^3.600.0"
+  }
+}
