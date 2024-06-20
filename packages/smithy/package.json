@@ -1,22 +1,20 @@
 {
-  "name": "@functorfactory/appsync-client",
+  "name": "@functorfactory/smithy-client",
   "version": "0.0.0",
   "type": "module",
   "license": "GPL-3.0-or-later",
   "description": "",
   "homepage": "",
   "keywords": [
-    "aws",
-    "appsync"
+    "aws"
   ],
   "tags": [
-    "aws",
-    "appsync"
+    "aws"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/FunctorFactory/aws-utils.git",
-    "directory": "packages/appsync"
+    "directory": "packages/smithy"
   },
   "bugs": {
     "url": "https://github.com/FunctorFactory/aws-utils/issues"
@@ -29,10 +27,11 @@
     "check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@aws-sdk/client-appsync": "^3.600.0",
-    "@functorfactory/smithy-client": "workspace:^"
+    "@smithy/smithy-client": "^3.1.4",
+    "@smithy/types": "^3.2.0",
+    "effect": "^3.3.5"
   },
   "devDependencies": {
-    "effect": "^3.3.5"
+    "typescript": "^5.4.5"
   }
 }

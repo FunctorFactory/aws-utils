@@ -36,6 +36,13 @@
     "incremental": true,
     "removeComments": false,
     "plugins": [{ "name": "@effect/language-service" }],
-    "paths": {}
+    "paths": {
+      "@functorfactory/smithy-client": ["packages/smithy/src/index.js"],
+      "@functorfactory/smithy-client/*": ["packages/smithy/src/*.js"],
+      "@functorfactory/smithy-client/test/*": ["packages/smithy/src/*.js"],
+      "@functorfactory/appsync-client": ["packages/appsync/src/index.js"],
+      "@functorfactory/appsync-client/*": ["packages/appsync/src/*.js"],
+      "@functorfactory/appsync-client/test/*": ["packages/appsync/src/*.js"]
+    }
   }
 }
