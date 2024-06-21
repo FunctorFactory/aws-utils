@@ -28,10 +28,12 @@
   },
   "dependencies": {
     "@smithy/smithy-client": "^3.1.4",
-    "@smithy/types": "^3.2.0",
-    "effect": "^3.3.5"
+    "@smithy/types": "^3.2.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "effect": "^3.3.5"
+  },
+  "peerDependencies": {
+    "effect": "^3.3.5"
   }
 }

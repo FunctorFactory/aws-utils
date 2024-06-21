@@ -29,10 +29,14 @@
     "check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@aws-sdk/client-appsync": "^3.600.0",
-    "@functorfactory/smithy-client": "workspace:^"
+    "@aws-sdk/client-appsync": "^3.600.0"
   },
   "devDependencies": {
+    "@functorfactory/smithy-client": "workspace:^",
+    "effect": "^3.3.5"
+  },
+  "peerDependencies": {
+    "@functorfactory/smithy-client": "workspace:^",
     "effect": "^3.3.5"
   }
 }

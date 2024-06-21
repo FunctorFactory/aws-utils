@@ -50,10 +50,10 @@ importers:
       '@aws-sdk/client-appsync':
         specifier: ^3.600.0
         version: 3.600.0
+    devDependencies:
       '@functorfactory/smithy-client':
         specifier: workspace:^
         version: link:../smithy
-    devDependencies:
       effect:
         specifier: ^3.3.5
         version: 3.3.5
@@ -66,13 +66,10 @@ importers:
       '@smithy/types':
         specifier: ^3.2.0
         version: 3.2.0
+    devDependencies:
       effect:
         specifier: ^3.3.5
         version: 3.3.5
-    devDependencies:
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
 
 packages:
 
